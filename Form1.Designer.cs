@@ -28,13 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Start = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Cars = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // Start
+            // 
+            this.Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Start.Location = new System.Drawing.Point(125, 347);
+            this.Start.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Start.Name = "Start";
+            this.Start.Size = new System.Drawing.Size(187, 44);
+            this.Start.TabIndex = 0;
+            this.Start.Text = "Create_Ivent";
+            this.Start.UseVisualStyleBackColor = true;
+            this.Start.Click += new System.EventHandler(this.Start_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(120, 134);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(255, 31);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Count of a new cars";
+            // 
+            // Cars
+            // 
+            this.Cars.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Cars.Location = new System.Drawing.Point(125, 234);
+            this.Cars.Name = "Cars";
+            this.Cars.Size = new System.Drawing.Size(137, 38);
+            this.Cars.TabIndex = 2;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(665, 603);
+            this.Controls.Add(this.Cars);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Start);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button Start;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox Cars;
     }
 }
 
