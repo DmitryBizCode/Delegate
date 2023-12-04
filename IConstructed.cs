@@ -8,5 +8,6 @@ namespace Delegate
 {
     internal interface IConstructed
     {
+        void ConstructedCar(uint count);
     }
 }

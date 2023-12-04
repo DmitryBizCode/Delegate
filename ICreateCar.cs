@@ -8,5 +8,6 @@ namespace Delegate
 {
     internal interface ICreateCar
     {
+        string StartProject();
     }
 }

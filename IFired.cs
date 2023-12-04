@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Delegate
 {
-    internal interface ITake
+    internal interface IFired
     {
-        string TakingAMean();
+        string FiredEmployee();
     }
 }

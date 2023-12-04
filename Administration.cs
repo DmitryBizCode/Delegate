@@ -7,16 +7,13 @@ using System.Windows.Forms;
 
 namespace Delegate
 {
-    internal class Administration : IHire
+    internal class Administration : IHire,IFired
     {
-        public string HireEmployee()
-        {
-            return "Наймаєм нового працівника в адміністрацію.";
-        }
+        public string HireEmployee() => "We are increasing the composition of the administration for better productivity";
+        public string FiredEmployee() => "we are firing temporary managers";
+        public void AdministrationFireEvent() => MessageBox.Show(FiredEmployee(), "Administration");
 
-        public void AdministrationEvent()
-        {
-            MessageBox.Show(HireEmployee(), "Адміністрація");
-        }
+        public void AdministrationEvent() => MessageBox.Show(HireEmployee(), "Administration");
+        
     }
 }

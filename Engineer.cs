@@ -9,19 +9,16 @@ namespace Delegate
 {
     internal class Engineer : ICreateCar, ITake
     {
-        public void StartProject()
-        {
-            MessageBox.Show("Started to design a new car");
-        }
+        public string StartProject() => "Started to design a new car";
+        
 
-        public string Run()
-        {
-            return "Інженер виїхав на об'єкт.";
-        }
+        public string TakingAMean() => "Listened to the customer's opinion";
+        
 
         public void EngineerEvent()
         {
-            MessageBox.Show(Run(), "Інженер");
+            MessageBox.Show(TakingAMean(), "Engineer");
+            MessageBox.Show(StartProject(), "Engineer");
         }
     }
 }

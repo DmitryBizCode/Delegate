@@ -58,6 +58,7 @@
     <Compile Include="HR.cs" />
     <Compile Include="IConstructed.cs" />
     <Compile Include="ICreateCar.cs" />
+    <Compile Include="IFired.cs" />
     <Compile Include="IHire.cs" />
     <Compile Include="ITake.cs" />
     <Compile Include="Program.cs" />
@@ -75,6 +76,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
